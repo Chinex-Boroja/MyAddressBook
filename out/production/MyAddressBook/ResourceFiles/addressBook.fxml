@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="400.0" style="-fx-background-color: #caf7fc; -fx-background-radius: 30;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddressController.AddressControllerEvents">
+   <top>
+      <VBox prefHeight="100.0" prefWidth="370.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="40.0" prefWidth="208.0" text="My Address Book" textFill="#d4797a">
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Curlz MT" size="22.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="131.0" prefWidth="379.0" style="-fx-background-color: #0c96a8; -fx-background-radius: 120;">
+               <children>
+                  <ImageView fitHeight="102.0" fitWidth="104.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/modern-house-17-1147665.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <VBox prefHeight="265.0" prefWidth="381.0" spacing="5.0" style="-fx-background-color: #0c96a8; -fx-background-radius: 40;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="37.0" prefWidth="370.0">
+               <children>
+                  <Label prefHeight="37.0" prefWidth="53.0" text="Name" textFill="WHITE">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="14.0" />
+                     </font></Label>
+                  <TextField fx:id="nameDisplay" prefHeight="43.0" prefWidth="311.0" style="-fx-background-color: white; -fx-background-radius: 60;">
+                     <font>
+                        <Font name="Comic Sans MS" size="16.0" />
+                     </font></TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="37.0" prefWidth="370.0">
+               <children>
+                  <Label prefHeight="37.0" prefWidth="53.0" text="Phone" textFill="WHITE">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="14.0" />
+                     </font></Label>
+                  <TextField fx:id="phoneDisplay" prefHeight="43.0" prefWidth="311.0" style="-fx-background-color: white; -fx-background-radius: 60;">
+                     <font>
+                        <Font name="Comic Sans MS" size="16.0" />
+                     </font></TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="47.0" prefHeight="37.0" prefWidth="370.0">
+               <children>
+                  <Label prefHeight="37.0" prefWidth="53.0" text="Street" textFill="WHITE">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="14.0" />
+                     </font></Label>
+                  <TextField fx:id="streetDisplay" prefHeight="43.0" prefWidth="311.0" style="-fx-background-color: white; -fx-background-radius: 60;">
+                     <font>
+                        <Font name="Comic Sans MS" size="16.0" />
+                     </font></TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="84.0" prefHeight="37.0" prefWidth="370.0">
+               <children>
+                  <Label prefHeight="37.0" prefWidth="53.0" text="Email" textFill="WHITE">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="14.0" />
+                     </font></Label>
+                  <TextField fx:id="emailDisplay" prefHeight="43.0" prefWidth="311.0" style="-fx-background-color: white; -fx-background-radius: 60;">
+                     <font>
+                        <Font name="Comic Sans MS" size="16.0" />
+                     </font></TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="121.0" prefHeight="37.0" prefWidth="370.0">
+               <children>
+                  <Label prefHeight="37.0" prefWidth="78.0" text="City" textFill="WHITE">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="14.0" />
+                     </font></Label>
+                  <TextField fx:id="cityDisplay" prefHeight="37.0" prefWidth="153.0" style="-fx-background-color: white; -fx-background-radius: 60;">
+                     <font>
+                        <Font name="Comic Sans MS" size="16.0" />
+                     </font></TextField>
+                  <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="37.0" prefWidth="81.0" text="State" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="stateDisplay" layoutX="63.0" layoutY="10.0" prefHeight="37.0" prefWidth="131.0" style="-fx-background-color: white; -fx-background-radius: 60;">
+                     <font>
+                        <Font name="Comic Sans MS" size="16.0" />
+                     </font></TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="158.0" prefHeight="37.0" prefWidth="370.0">
+               <children>
+                  <Label prefHeight="37.0" prefWidth="53.0" text="Zip" textFill="WHITE">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="14.0" />
+                     </font></Label>
+                  <TextField fx:id="zipDisplay" prefHeight="43.0" prefWidth="311.0" style="-fx-background-color: white; -fx-background-radius: 60;">
+                     <font>
+                        <Font name="Comic Sans MS" size="16.0" />
+                     </font></TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="195.0" prefHeight="37.0" prefWidth="376.0" spacing="10.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onAddClicked" prefHeight="35.0" prefWidth="52.0" style="-fx-background-color: d4797a; -fx-background-radius: 30;" text="Add" textFill="WHITE">
+                     <font>
+                        <Font name="Ebrima" size="13.0" />
+                     </font></Button>
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#onFirstClicked" prefHeight="35.0" prefWidth="52.0" style="-fx-background-color: d4797a; -fx-background-radius: 30;" text="First" textFill="WHITE">
+                     <font>
+                        <Font name="Ebrima" size="13.0" />
+                     </font></Button>
+                  <Button layoutX="62.0" layoutY="10.0" mnemonicParsing="false" onAction="#onNextClicked" prefHeight="35.0" prefWidth="52.0" style="-fx-background-color: d4797a; -fx-background-radius: 30;" text="Next" textFill="WHITE">
+                     <font>
+                        <Font name="Ebrima" size="13.0" />
+                     </font></Button>
+                  <Button layoutX="114.0" layoutY="10.0" mnemonicParsing="false" onAction="#onPreviousClicked" prefHeight="35.0" prefWidth="52.0" style="-fx-background-color: d4797a; -fx-background-radius: 30;" text="Prev" textFill="WHITE">
+                     <font>
+                        <Font name="Ebrima" size="13.0" />
+                     </font></Button>
+                  <Button layoutX="166.0" layoutY="10.0" mnemonicParsing="false" onAction="#onLastClicked" prefHeight="35.0" prefWidth="52.0" style="-fx-background-color: d4797a; -fx-background-radius: 30;" text="Last" textFill="WHITE">
+                     <font>
+                        <Font name="Ebrima" size="13.0" />
+                     </font></Button>
+                  <Button layoutX="218.0" layoutY="10.0" mnemonicParsing="false" onAction="#onUpdateClicked" prefHeight="35.0" prefWidth="52.0" style="-fx-background-color: d4797a; -fx-background-radius: 30;" text="Update" textFill="WHITE">
+                     <font>
+                        <Font name="Ebrima" size="11.0" />
+                     </font></Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="46.0" prefWidth="360.0">
+               <children>
+                  <Label fx:id="displayContent" alignment="CENTER" prefHeight="35.0" prefWidth="234.0" style="-fx-background-color: white; -fx-background-radius: 45;" textFill="#0c96a8" wrapText="true">
+                     <HBox.margin>
+                        <Insets bottom="6.0" left="120.0" top="7.0" />
+                     </HBox.margin></Label>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>
